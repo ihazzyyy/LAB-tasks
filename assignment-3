@@ -1,0 +1,22 @@
+class Rectangle:
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+
+    def __str__(self):
+        return f'Rectangle: [{self.width}] x [{self.height}]'
+
+    def area(self):
+        print('Area = ',self.width * self.height)
+
+    def perimeter(self):
+        print('perimeter =', 2*(self.width + self.height))
+
+
+
+width = float(input('enter width: '))
+height = float(input('enter height: '))
+
+rectangle1 = Rectangle(width , height)
+rectangle1.area()
+rectangle1.perimeter()
